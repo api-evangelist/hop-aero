@@ -1,7 +1,27 @@
 aid: hop-aero
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hop-aero.png
 name: Hop Aero
-description: Hop Aero is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Hop Aero is a Y Combinator (Summer 2026) aerospace and defense company based in Los Angeles,
+  California, founded in 2024 by Jacob Balaj and Matija Milenovic. The company develops hypersonic
+  rocket cargo vehicles that deliver payloads point-to-point into austere, contested environments
+  hundreds of miles away in minutes, aiming to give the United States and its allies an asymmetric
+  logistics advantage. Hop Aero has raised a $3M pre-seed round and won a $1.25M U.S. Air Force SBIR
+  award; its team draws on experience from SpaceX, Virgin Orbit, Masten Space Systems, SpinLaunch,
+  and Destinus. This is a hardware-stage company with no public API or developer surface at the time
+  of profiling; this record was added to the API Evangelist network as a portfolio-lead stub and is
+  maintained for network discovery and enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/hop-aero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Aerospace
+- Defense
+- Space
+- Logistics
+- Rocketry
+- Hypersonics
+- Y Combinator
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
+common:
+- type: DomainSecurity
+  url: security/hop-aero-domain-security.yml
+- type: Website
+  url: https://hop-aero.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/hop-aero/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
